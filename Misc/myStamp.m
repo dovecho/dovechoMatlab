@@ -11,7 +11,7 @@ function strStamp = myStamp(varargin)
 %
 %   revSTR STRing that contains revising information
 %   VER Version in 'x.x.x.x' format
-%
+
 %   Copyright (c) 2012 - 2015, LONMP, Tsinghua University,
 %   Written by Shangyuan Li,
 %
@@ -46,6 +46,5 @@ strStamp = [strStamp sprintf('%%\n')];
 strStamp = [strStamp sprintf('%%   Revision Note: %s\n', revSTR)];
 strStamp = [strStamp sprintf('%%   $Version: %s $\t', ver)];
 strStamp = [strStamp sprintf('$Date: %s $\n', datestr(now, 'yyyy-mm-dd HH:MM:SS'))];
-strStamp = [strStamp sprintf('\n')];
 
 fprintf(fid, '%s', strStamp);
