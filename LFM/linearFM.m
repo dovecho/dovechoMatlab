@@ -45,4 +45,5 @@ y1 = cos(2*pi*f.*t);
 y2 = chirp(t,f1,t0,f2);
 
 % adding 0 at the end of the signal
-y = [y2, zeros(1,ptsdt)];
+y = [y2, zeros(1,ptsdt)]';
+t = linspace(0,(t0+dt),pts+ptsdt);

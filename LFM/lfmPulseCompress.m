@@ -19,8 +19,8 @@ function [cp, t] = lfmPulseCompress(ref, meas, fs, window, isplot)
 %   Copyright (c) 2012 - 2017, LONMP, Tsinghua University,
 %   Written by Shangyuan Li,
 %
-%   Revision Note: New function
-%   $Version: 1.0 $	$Date: 2017-01-28 19:58:39 $
+%   Revision Note: Update some comments
+%   $Version: 1.0.1 $	$Date: 2017-02-01 21:09:29 $
 
 narginchk(3,5);
 
@@ -89,6 +89,4 @@ if isplot == 1
     range=0; scale = 0.5;
     xlim([-1 1]*scale+range);ylim([-6 0]+max(mag_pc_data));grid on;
     title('Closer look');drawnow;snapnow;
-
-
 end
